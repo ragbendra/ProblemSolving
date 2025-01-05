@@ -1,0 +1,19 @@
+## Some git commands
+1. git init 
+2. git add file_path
+3. git add . (for all files tarcking)
+4. git commit -m 'some_message'
+5. git log (for hisotry of chnages in a code)
+6. git blame file_path (for detail history of file changes)
+7. git status (for status of files)
+8. git branch (for list of all branches)
+9. git checkout branch_name (for switching between branches)
+10. git merge branch_name (for merging two branches)
+11. git remote add origin url (for linking local repo with remote repo)
+12. git push origin branch_name (for pushing changes to remote repo)
+13. git pull origin branch_name (for pulling changes from remote repo)
+14. git remote -v (for checking remote repo url)
+15. git diff (for showing changes made from original file- a comparison)
+16. git reset --hard (for resetting all changes made in a file)
+17. git reset --soft (for resetting all changes made in a file, but keeping the changes)
+18. git reset --mixed (for resetting all changes made in a file, but keeping the changes)
