@@ -48,7 +48,7 @@ if ($changedFiles.Count -gt 0) {
         }
 
         # Commit and push changes
-        $commitMessage = "Automated commit for files: $(($filesToCommit -join ', ')) on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+        $commitMessage = "$(($filesToCommit -join ', ')) on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
         git commit -m $commitMessage
         git push origin main  # Replace 'main' with your actual branch name
 
@@ -77,7 +77,7 @@ else {
             # Commit the files in batches of 2-3
             Write-Host "Committing the following files: $($filesToCommit -join ', ')"
             git add $filesToCommit
-            $commitMessage = "Automated commit for files: $(($filesToCommit -join ', ')) on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+            $commitMessage = "$(($filesToCommit -join ', ')) on $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
             git commit -m $commitMessage
             git push origin main  # Replace 'main' with your actual branch name
 
